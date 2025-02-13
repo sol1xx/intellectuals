@@ -1,1 +1,1 @@
-# intellectuals
+# intellectuals site for discord server info
