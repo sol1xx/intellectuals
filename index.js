@@ -28,7 +28,7 @@ const burgerMenu = document.getElementById('burger-menu')
 				style.innerHTML = `
         .dark-mode {
             background-color: #000000;
-            color: #ffffff;
+            color:rgb(255, 255, 255)
         }
         .dark-mode .box,
         .dark-mode .section,
@@ -39,22 +39,22 @@ const burgerMenu = document.getElementById('burger-menu')
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         }
         .dark-mode .day {
-            background-color: #222;
+            background-color: #fff;
         }
         .dark-mode .day.active {
-            background-color: #333;
+            background-color: #fff;
         }
         .dark-mode .nav-links li a {
-            color: #4da3ff;
+            color:rgb(255, 255, 255);
         }
         .dark-mode .nav-links li a:hover {
-            color: #82cfff;
+            color:rgb(216, 216, 216);
         }
         .dark-mode .btn {
-            background-color: #3b4cca;
+            background-color:rgb(255, 255, 255);
         }
         .dark-mode .btn:hover {
-            background-color: #2a3492;
+            background-color:rgb(216, 216, 216);
         }
 				.dark-mode .description{
 					color: #fff;
@@ -63,10 +63,10 @@ const burgerMenu = document.getElementById('burger-menu')
             background: #181818;
         }
         .dark-mode .footer a {
-            color:rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
         }
         .dark-mode .people-dsserver_column_title:hover {
-            color: #bbbbbb;
+            color:rgb(216, 216, 216);
         }
     `
 				document.head.appendChild(style)
