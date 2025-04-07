@@ -342,3 +342,6 @@ nav > ul > li:last-child {
     border: 1px solid #333;
 }
 
+.dark-mode .day.active p {
+    color: #000000; /* Зберігається видимість тексту в активних днях */
+}
