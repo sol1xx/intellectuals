@@ -98,21 +98,21 @@ const burgerMenu = document.getElementById('burger-menu')
         const translations = {
             'ua': {
                 'aboutdsserver': 'Про сервер',
-                'main': 'Розклад ігор',
+                'main': 'Розклад розмов',
                 'about': 'Про команду',
                 'feedback': 'Відгук',
                 'footer': 'Контакти',
-                'schedule-title': 'Розклад ігор',
+                'schedule-title': 'Розклад розмов',
                 'join-server': 'Приєднатися до серверу',
-                'welcome-message': 'Ласкаво просимо на наш Discord-сервер! Тут ви знайдете розклад наших ігор. Приєднуйтесь до нашої спільноти за посиланням нижче.',
+                'welcome-message': 'Ласкаво просимо на наш Discord-сервер! Тут ви знайдете розклад наших розмов. Приєднуйтесь до нашої спільноти за посиланням нижче.',
                 'discord-description': 'Наш Discord сервер — це місце, де гравці можуть збиратися для спілкування, координації та гри в улюблені відеоігри. На сервері є текстові та голосові канали, де користувачі можуть обговорювати стратегії, ділитися новинами та просто весело проводити час. Також доступні боти для музики, розваг і модерації. Сервер може містити різні ролі, системи рівнів і турніри, що робить спільноту ще цікавішою та активнішою.',
                 'days': ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П’ятниця', 'Субота', 'Неділя'],
-                'games': {
-                    'cs2': 'Counter Strike 2',
-                    'dota': 'Dota 2'
+                'schedule': {
+                    'room': 'ROOM I',
+                    'moderroom': 'MODER ROOM'
                 },
                 'intellectuals-server': 'INTELLECTUALS - Про сервер',
-                'intellectuals-schedule': 'INTELLECTUALS - Розклад ігор',
+                'intellectuals-schedule': 'INTELLECTUALS - Розклад розмов',
                 'intellectuals-team': 'INTELLECTUALS - Про команду',
                 'contact-email': '📧 Пошта: intellectualsds@gmail.com',
                 'contact-owner': '👤 Власник: solix | Адміністратор: vey',
@@ -126,22 +126,22 @@ const burgerMenu = document.getElementById('burger-menu')
             },
             'en': {
                 'aboutdsserver': 'About Server',
-                'main': 'Game Schedule',
+                'main': 'Conversation Schedule',
                 'about': 'About Team',
                 'feedback': 'Feedback',
                 'footer': 'Contacts',
                 'leave-feedback': 'Leave Feedback',
-                'schedule-title': 'Game Schedule',
+                'schedule-title': 'Conversation Schedule',
                 'join-server': 'Join the server',
-                'welcome-message': 'Welcome to our Discord server! Here you will find the game schedule. Join our community via the link below.',
+                'welcome-message': 'Welcome to our Discord server! Here you will find the onversation schedule. Join our community via the link below.',
                 'discord-description': 'Our Discord server is a place where players can gather to chat, coordinate, and play their favorite video games. The server has text and voice channels where users can discuss strategies, share news, and just have fun. Music, entertainment, and moderation bots are also available. The server may have different roles, leveling systems, and tournaments, making the community even more exciting and active.',
                 'days': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                'games': {
-                    'cs2': 'Counter Strike 2',
-                    'dota': 'Dota 2'
+                'schedule': {
+                    'room': 'ROOM I',
+                    'moderroom': 'MODER ROOM'
                 },
                 'intellectuals-server': 'INTELLECTUALS - About Server',
-                'intellectuals-schedule': 'INTELLECTUALS - Game Schedule',
+                'intellectuals-schedule': 'INTELLECTUALS - Conversation Schedule',
                 'intellectuals-team': 'INTELLECTUALS - About Team',
                 'contact-email': '📧 Email: intellectualsds@gmail.com',
                 'contact-owner': '👤 Owner: solix | Admin: vey',
@@ -179,13 +179,13 @@ const burgerMenu = document.getElementById('burger-menu')
                 element.textContent = translations[lang]['days'][index];
             });
     
-            // Translate games
+            // Translate schedule
             const gameElements = document.querySelectorAll('.schedule .day p:last-child');
             gameElements.forEach((element) => {
-                if (element.textContent.includes('Dota 2')) {
-                    element.textContent = `🎮 ${translations[lang]['games']['dota']}`;
+                if (element.textContent.includes('MODER ROOM')) {
+                    element.textContent = `🚫 ${translations[lang]['schedule']['moderroom']}`;
                 } else {
-                    element.textContent = `🎮 ${translations[lang]['games']['cs2']}`;
+                    element.textContent = `🎧 ${translations[lang]['schedule']['room']}`;
                 }
             });
     
