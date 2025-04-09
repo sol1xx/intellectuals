@@ -96,7 +96,12 @@ h2 {
 .btn:hover {
 	background-color: #ffffff;
 }
-
+/* Темний режим для кнопок */
+.dark-mode .btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #333;
+}
 
 nav > ul > li:last-child {
   margin-right: 0px;
@@ -161,6 +166,10 @@ nav > ul > li:last-child {
 .day.active ~ .day:hover {
     transform: scale(1);
 }
+.dark-mode .day.active p {
+    color: #000000; /* Зберігається видимість тексту в активних днях */
+}
+
 
 /* people discord */
 .people-dsserver {
@@ -258,6 +267,20 @@ nav > ul > li:last-child {
 	gap: 20px;
 	padding: 10px;
 }
+/* Темний режим для тексту в футері */
+.dark-mode .footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .footer a {
+    color: #000000; /* Колір тексту для посилань в темному режимі */
+}
+
+.dark-mode .footer a:hover {
+    color: #000000; /* колір при наведенні */
+}
+
 
 /* !!!! adaptation for phone !!!! */
 @media (max-width: 1024px) {
@@ -333,28 +356,4 @@ nav > ul > li:last-child {
     .btn:active {
         transform: scale(1.03); 
     }
-}
-
-/* Темний режим для кнопок */
-.dark-mode .btn {
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #333;
-}
-
-.dark-mode .day.active p {
-    color: #000000; /* Зберігається видимість тексту в активних днях */
-}
-/* Темний режим для тексту в футері */
-.dark-mode .footer {
-    background-color: #2e2e2e;
-    color: #ffffff;
-}
-
-.dark-mode .footer a {
-    color: #000000; /* Колір тексту для посилань в темному режимі */
-}
-
-.dark-mode .footer a:hover {
-    color: #000000; /* Світліший колір при наведенні */
 }

@@ -108,7 +108,7 @@ const burgerMenu = document.getElementById('burger-menu')
                 'discord-description': 'Наш Discord сервер — це місце, де гравці можуть збиратися для спілкування, координації та гри в улюблені відеоігри. На сервері є текстові та голосові канали, де користувачі можуть обговорювати стратегії, ділитися новинами та просто весело проводити час. Також доступні боти для музики, розваг і модерації. Сервер може містити різні ролі, системи рівнів і турніри, що робить спільноту ще цікавішою та активнішою.',
                 'days': ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П’ятниця', 'Субота', 'Неділя'],
                 'schedule': {
-                    'room': 'ROOM I',
+                    'room': 'ROOM',
                     'moderroom': 'MODER ROOM'
                 },
                 'intellectuals-server': 'INTELLECTUALS - Про сервер',
@@ -137,7 +137,7 @@ const burgerMenu = document.getElementById('burger-menu')
                 'discord-description': 'Our Discord server is a place where players can gather to chat, coordinate, and play their favorite video games. The server has text and voice channels where users can discuss strategies, share news, and just have fun. Music, entertainment, and moderation bots are also available. The server may have different roles, leveling systems, and tournaments, making the community even more exciting and active.',
                 'days': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
                 'schedule': {
-                    'room': 'ROOM I',
+                    'room': 'ROOM',
                     'moderroom': 'MODER ROOM'
                 },
                 'intellectuals-server': 'INTELLECTUALS - About Server',
