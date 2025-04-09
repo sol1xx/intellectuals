@@ -345,3 +345,16 @@ nav > ul > li:last-child {
 .dark-mode .day.active p {
     color: #000000; /* Зберігається видимість тексту в активних днях */
 }
+/* Темний режим для тексту в футері */
+.dark-mode .footer {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .footer a {
+    color: #ffffff; /* Колір тексту для посилань в темному режимі */
+}
+
+.dark-mode .footer a:hover {
+    color: #cccccc; /* Світліший колір при наведенні */
+}
