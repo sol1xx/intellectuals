@@ -357,3 +357,23 @@ nav > ul > li:last-child {
         transform: scale(1.03); 
     }
 }
+
+/* Стандартний колір посилань у світлій темі */
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #3f3f3f;
+}
+
+/* В темній темі: білі посилання */
+.dark-mode a {
+	color: #ffffff;
+}
+
+.dark-mode a:hover {
+	color: #cccccc;
+}
